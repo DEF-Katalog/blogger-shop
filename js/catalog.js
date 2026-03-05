@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(){
+
 const products = [
 {
 nama:"Sofa Minimalis",
@@ -32,8 +34,14 @@ html += `
 
 html += "</div>"
 
-document.getElementById("app").innerHTML = html
+const app = document.getElementById("app")
+
+if(app){
+app.innerHTML = html
+}
 
 }
 
 render()
+
+})
