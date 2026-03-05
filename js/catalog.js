@@ -1,41 +1,39 @@
 const products = [
-  {
-    nama:"Sofa Minimalis",
-    harga:"Rp 2.500.000",
-    gambar:"https://via.placeholder.com/400"
-  },
-  {
-    nama:"Meja Kayu",
-    harga:"Rp 1.200.000",
-    gambar:"https://via.placeholder.com/400"
-  },
-  {
-    nama:"Kursi Santai",
-    harga:"Rp 700.000",
-    gambar:"https://via.placeholder.com/400"
-  }
+{
+nama:"Sofa Minimalis",
+harga:"Rp 2.500.000",
+gambar:"https://via.placeholder.com/400"
+},
+{
+nama:"Meja Kayu",
+harga:"Rp 1.200.000",
+gambar:"https://via.placeholder.com/400"
+},
+{
+nama:"Kursi Santai",
+harga:"Rp 700.000",
+gambar:"https://via.placeholder.com/400"
+}
 ]
 
-function renderCatalog(){
+function render(){
 
-  const app = document.getElementById("app")
+let html = "<div class='catalog'>"
 
-  let html = "<div class='catalog'>"
+products.forEach(p=>{
+html += `
+<div class="product">
+<img src="${p.gambar}">
+<h3>${p.nama}</h3>
+<p>${p.harga}</p>
+</div>
+`
+})
 
-  products.forEach(p=>{
-    html += `
-      <div class="product">
-        <img src="${p.gambar}">
-        <h3>${p.nama}</h3>
-        <p>${p.harga}</p>
-      </div>
-    `
-  })
+html += "</div>"
 
-  html += "</div>"
-
-  app.innerHTML = html
+document.getElementById("app").innerHTML = html
 
 }
 
-renderCatalog()
+render()
