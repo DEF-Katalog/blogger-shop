@@ -1,1 +1,1 @@
-
+console.log("config loaded")
