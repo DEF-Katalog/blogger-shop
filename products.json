@@ -1,0 +1,18 @@
+[
+{
+"id":1,
+"nama":"Sepatu Sneakers Pria",
+"harga":250000,
+"gambar":"https://i.imgur.com/9sY3F4N.jpg",
+"diskon":20,
+"rating":4.8
+},
+{
+"id":2,
+"nama":"Tas Wanita Fashion",
+"harga":175000,
+"gambar":"https://i.imgur.com/vp7Y6Re.jpg",
+"diskon":10,
+"rating":4.7
+}
+]
